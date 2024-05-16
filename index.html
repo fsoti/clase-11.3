@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clase 11!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="col-12 mx-auto text-center my-5 display-5">Aprendiendo como aplicar gráficos</div>
+    <h4 class="col-10 text-center mx-auto fs-6">Primero se utilizó la herramienta que nos proporciona RawGraphs para explorar los diferentes tipos de datos. En este caso se usaron para hacer un ejercicio de ejemplo los datos entregados por la misma plataforma. Además, se siguió la recomendación del tipo de gráfico en relación al conjunto de datos escogido.</h4>
+    <h2 class="text-center my-5">Bubble chart</h2>
+    <div class="col-10 mx-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 700 600">
+        <rect width="700" height="600" x="0" y="0" fill="#FFFFFF" id="background" />
+        <g id="series">
+            <g transform="translate(0,0)">
+                <g transform="translate(50,50)" clip-path="url(#serieClipPath)">
+                    <g id="axis">
+                        <g transform="translate(0,500)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                            <path class="domain" stroke="currentColor" d="M0,6V0H500V6" />
+                            <g class="tick" opacity="1" transform="translate(0,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">0</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(63,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">50</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(125,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">100</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(188,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">150</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(250,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">200</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(313,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">250</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(375,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">300</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(438,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">350</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(500,0)">
+                                <line stroke="currentColor" y2="6" />
+                                <text fill="currentColor" y="9" dy="0.71em">400</text>
+                            </g>
+                            <text x="500" dy="-5" text-anchor="end" style="font-family: Arial, sans-serif; font-size: 12px; fill: rgb(123, 123, 123); font-weight: bold;">Budget (mln)</text>
+                        </g>
+                        <g fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                            <path class="domain" stroke="currentColor" d="M-6,500H0V0H-6" />
+                            <g class="tick" opacity="1" transform="translate(0,500)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">0</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,464)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">200</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,429)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">400</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,393)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">600</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,357)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">800</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,321)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">1,000</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,286)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">1,200</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,250)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">1,400</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,214)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">1,600</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,179)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">1,800</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,143)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">2,000</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,107)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">2,200</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,71)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">2,400</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,36)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">2,600</text>
+                            </g>
+                            <g class="tick" opacity="1" transform="translate(0,0)">
+                                <line stroke="currentColor" x2="-6" />
+                                <text fill="currentColor" x="-9" dy="0.32em">2,800</text>
+                            </g>
+                            <text x="4" text-anchor="start" dominant-baseline="hanging" style="font-family: Arial, sans-serif; font-size: 12px; fill: rgb(123, 123, 123); font-weight: bold;">Real Worldwide Box Office (mln)</text>
+                        </g>
+                    </g>
+                    <g id="viz">
+                        <g><circle cx="1" cy="452" fill="rgb(38, 188, 225)" r="21" stroke="none" /></g>
+                        <g><circle cx="2" cy="425" fill="rgb(38, 188, 225)" r="20" stroke="none" /></g>
+                        <g><circle cx="5" cy="428" fill="rgb(236, 209, 46)" r="12" stroke="none" /></g>
+                        <g><circle cx="5" cy="433" fill="rgb(38, 188, 225)" r="12" stroke="none" /></g>
+                        <g><circle cx="4" cy="453" fill="rgb(38, 188, 225)" r="11" stroke="none" /></g>
+                        <g><circle cx="14" cy="361" fill="rgb(35, 23, 27)" r="10" stroke="none" /></g>
+                        <g><circle cx="13" cy="358" fill="rgb(255, 130, 29)" r="10" stroke="none" /></g>
+                        <g><circle cx="5" cy="446" fill="rgb(38, 188, 225)" r="10" stroke="none" /></g>
+                        <g><circle cx="8" cy="429" fill="rgb(144, 12, 0)" r="10" stroke="none" /></g>
+                        <g><circle cx="11" cy="416" fill="rgb(69, 105, 238)" r="9" stroke="none" /></g>
+                        <g><circle cx="7" cy="456" fill="rgb(149, 251, 81)" r="8" stroke="none" /></g>
+                        <g><circle cx="10" cy="449" fill="rgb(63, 243, 147)" r="7" stroke="none" /></g>
+                        <g><circle cx="15" cy="421" fill="rgb(203, 47, 13)" r="7" stroke="none" /></g>
+                        <g><circle cx="4" cy="478" fill="rgb(35, 23, 27)" r="7" stroke="none" /></g>
+                        <g><circle cx="14" cy="456" fill="rgb(236, 209, 46)" r="6" stroke="none" /></g>
+                        <g><circle cx="56" cy="327" fill="rgb(38, 188, 225)" r="6" stroke="none" /></g>
+                        <g><circle cx="29" cy="402" fill="rgb(35, 23, 27)" r="6" stroke="none" /></g>
+                        <g><circle cx="79" cy="316" fill="rgb(35, 23, 27)" r="5" stroke="none" /></g>
+                        <g><circle cx="41" cy="415" fill="rgb(35, 23, 27)" r="5" stroke="none" /></g>
+                        <g><circle cx="296" cy="2" fill="rgb(35, 23, 27)" r="4" stroke="none" /></g>
+                        <g><circle cx="250" cy="108" fill="rgb(236, 209, 46)" r="4" stroke="none" /></g>
+                        <g><circle cx="16" cy="478" fill="rgb(69, 105, 238)" r="4" stroke="none" /></g>
+                        <g><circle cx="188" cy="202" fill="rgb(35, 23, 27)" r="4" stroke="none" /></g>
+                        <g><circle cx="144" cy="317" fill="rgb(35, 23, 27)" r="4" stroke="none" /></g>
+                        <g><circle cx="19" cy="474" fill="rgb(69, 105, 238)" r="4" stroke="none" /></g>
+                        <g><circle cx="118" cy="296" fill="rgb(69, 105, 238)" r="4" stroke="none" /></g>
+                        <g><circle cx="94" cy="354" fill="rgb(35, 23, 27)" r="4" stroke="none" /></g>
+                        <g><circle cx="13" cy="475" fill="rgb(35, 23, 27)" r="4" stroke="none" /></g>
+                        <g><circle cx="69" cy="379" fill="rgb(236, 209, 46)" r="4" stroke="none" /></g>
+                        <g><circle cx="118" cy="330" fill="rgb(69, 105, 238)" r="4" stroke="none" /></g>
+                        <g><circle cx="116" cy="341" fill="rgb(35, 23, 27)" r="4" stroke="none" /></g>
+                        <g><circle cx="188" cy="241" fill="rgb(38, 188, 225)" r="4" stroke="none" /></g>
+                        <g><circle cx="118" cy="332" fill="rgb(38, 188, 225)" r="4" stroke="none" /></g>
+                        <g><circle cx="125" cy="343" fill="rgb(69, 105, 238)" r="4" stroke="none" /></g>
+                        <g><circle cx="445" cy="0" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="323" cy="131" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="448" cy="134" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="275" cy="229" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="319" cy="204" fill="rgb(38, 188, 225)" r="3" stroke="none" /></g>
+                        <g><circle cx="238" cy="229" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="156" cy="325" fill="rgb(69, 105, 238)" r="3" stroke="none" /></g>
+                        <g><circle cx="219" cy="260" fill="rgb(69, 105, 238)" r="3" stroke="none" /></g>
+                        <g><circle cx="281" cy="310" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="188" cy="271" fill="rgb(38, 188, 225)" r="3" stroke="none" /></g>
+                        <g><circle cx="188" cy="334" fill="rgb(38, 188, 225)" r="3" stroke="none" /></g>
+                        <g><circle cx="250" cy="259" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="323" cy="262" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="250" cy="283" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="223" cy="266" fill="rgb(35, 23, 27)" r="3" stroke="none" /></g>
+                        <g><circle cx="456" cy="249" fill="rgb(35, 23, 27)" r="2" stroke="none" /></g>
+                        <g id="labels">
+                            <g transform="translate(1,452)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(2,425)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(5,428)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(5,433)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(4,453)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(14,361)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(13,358)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(5,446)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(8,429)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(11,416)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(7,456)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(10,449)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(15,421)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(4,478)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(14,456)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(56,327)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(29,402)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(79,316)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(41,415)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(296,2)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(250,108)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(16,478)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(188,202)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(144,317)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(19,474)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(118,296)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(94,354)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(13,475)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(69,379)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(118,330)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(116,341)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(188,241)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(118,332)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(125,343)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(445,0)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(323,131)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(448,134)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(275,229)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(319,204)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(238,229)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(156,325)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(219,260)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(281,310)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(188,271)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(188,334)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(250,259)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(323,262)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(250,283)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(223,266)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                            <g transform="translate(456,249)"><text x="0" y="0" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,0)" /></g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <clipPath id="serieClipPath"><rect x="-50" y="-50" width="600" height="600" /></clipPath>
+        <g id="legend" transform="translate(600,50)">
+            <g transform="translate(5,0)">
+                <g class="legendSize" transform="translate(0,0)">
+                    <g class="legendCells" transform="translate(21,15.5)">
+                        <g class="cell" transform="translate(0, 2)">
+                            <circle class="swatch" r="2" fill="none" stroke="#ccc" />
+                            <text class="label" transform="translate( 26,&#10;          5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">3.8</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 38)">
+                            <circle class="swatch" r="21" fill="none" stroke="#ccc" />
+                            <text class="label" transform="translate( 26,&#10;          5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">297.2</tspan></text>
+                        </g>
+                    </g>
+                    <text class="legendTitle" font-family='"Arial", sans-serif' font-size="12px" font-weight="bold"><tspan x="0" dy="0em">ROI</tspan></text>
+                </g>
+                <g class="legendColor" transform="translate(0,107)">
+                    <g class="legendCells" transform="translate(0,15.5)">
+                        <g class="cell" transform="translate(0, 0)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(35, 23, 27);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Action</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 20.5)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(69, 105, 238);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Adventure</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 41)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(38, 188, 225);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Animation</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 61.5)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(63, 243, 147);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Biography</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 82)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(149, 251, 81);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Crime</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 102.5)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(236, 209, 46);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Drama</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 123)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(255, 130, 29);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Family</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 143.5)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(203, 47, 13);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Horror</tspan></text>
+                        </g>
+                        <g class="cell" transform="translate(0, 164)">
+                            <rect class="swatch" height="15" width="15" style="fill: rgb(144, 12, 0);" />
+                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Musical</tspan></text>
+                        </g>
+                    </g>
+                    <text class="legendTitle" font-family='"Arial", sans-serif' font-size="12px" font-weight="bold"><tspan x="0" dy="0em">Genre</tspan></text>
+                </g>
+            </g>
+        </g>
+    </svg>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div class="chart1 ct-perfect-fourth"></div>
+      </div>
+      <div class="col-6 ">
+        <div class="chart2 ct-perfect-fourth"></div>
+      </div>
+    </div>
+
+    <div class="col-10 mx-auto">
+      <div class="chart3 ct-perfect-fourth"></div>
+    </div>
+
+    <div class="col-12 text-center my-5">✦ Clase 11 por Francisca Soto Arriarán ✦</div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js" integrity="sha512-9rxMbTkN9JcgG5euudGbdIbhFZ7KGyAuVomdQDI9qXfPply9BJh0iqA7E/moLCatH2JD4xBGHwV6ezBkCpnjRQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    var data = {
+      labels: ['Action', 'Adventure', 'Animation', 'Biography', 'Crime', 'Drama', 'Family', 'Horror', 'Musical' ],
+      series: [13.5, 14.8, 81.8, 34.9, 42.8, 37.5, 75.5, 36.8, 66.2]
+    };
+    var datos = {
+      labels: ['Action', 'Adventure', 'Animation', 'Biography', 'Crime', 'Drama', 'Family', 'Horror', 'Musical' ],
+      series: [1269, 754, 805, 286, 246, 880, 793, 441, 397]
+    };
+
+    var options = {
+      labelInterpolationFnc: function(value) {
+        return value[0]
+      }
+    };
+
+    var responsiveOptions = [
+      ['screen and (min-width: 640px)', {
+        chartPadding: 30,
+        labelOffset: 100,
+        labelDirection: 'explode',
+        labelInterpolationFnc: function(value) {
+          return value;
+        }
+      }],
+      ['screen and (min-width: 1024px)', {
+        labelOffset: 80,
+        chartPadding: 20
+      }]
+    ];
+
+    new Chartist.Pie('.chart1', data, options, responsiveOptions);
+
+    new Chartist.Pie('.chart2', datos, options, responsiveOptions);
+    new Chartist.Bar('.chart3', {
+      labels: ['Action', 'Adventure', 'Animation', 'Biography', 'Crime', 'Drama', 'Family', 'Horror', 'Musical' ],
+      series: [
+        [13.5, 14.8, 81.8, 34.9, 42.8, 37.5, 75.5, 36.8, 66.2],
+        [1269, 754, 805, 286, 246, 880, 793, 441, 397]
+      ]}, 
+    {
+      seriesBarDistance: 10,
+      reverseData: true,
+      horizontalBars: true,
+      axisY: {
+        offset: 70
+      }
+    });
+    </script>
+  </body>
+</html>
